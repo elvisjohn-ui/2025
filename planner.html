@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Planner | Time Planner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>📅 Task Planner</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="mood.html">Mood Tracker</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Organize Your Day</h2>
+      <p>Add tasks, track them, and make your day productive.</p>
+    </section>
+
+    <section class="planner-section">
+      <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="Enter a new task..." required />
+        <input type="date" id="taskDate" />
+        <button type="submit" class="btn">Add Task</button>
+      </form>
+
+      <ul id="taskList" class="task-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Time Planner by Elvis</p>
+  </footer>
+
+  <script src="scripts/scripts/app.js"></script>
+</body>
+</html>

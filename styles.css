@@ -1,0 +1,284 @@
+/* ===== Base Style Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf6f0;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 4rem;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #fff3e6;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  border-bottom: 2px solid #e0c8a0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+header h1 {
+  color: #5a3e1b;
+  font-size: 2rem;
+}
+
+nav ul {
+  margin-top: 1rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5a3e1b;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #e6cbb5;
+}
+
+/* ===== Main & Sections ===== */
+main {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.intro h2 {
+  font-size: 1.8rem;
+  color: #6b4226;
+  margin-bottom: 0.5rem;
+}
+
+.intro p {
+  color: #555;
+}
+
+/* ===== Cards ===== */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h3 {
+  color: #7a4e2d;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #c37b4a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #a7643a;
+}
+
+/* ===== Planner Page ===== */
+.planner-section {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#taskForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+#taskInput, #taskDate {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  background-color: #f9f5f0;
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #b34747;
+  cursor: pointer;
+}
+
+/* ===== Journal Page ===== */
+.journal-section {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#journalInput {
+  width: 100%;
+  height: 150px;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  resize: vertical;
+}
+
+.journal-entry {
+  background-color: #fdf6f0;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+/* ===== Mood Tracker Page ===== */
+.mood-section {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.mood-options button {
+  font-size: 1.5rem;
+  margin: 0.3rem;
+  padding: 0.5rem 0.8rem;
+  border: 2px solid #d1bfa3;
+  background-color: #f8eedd;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.mood-options button.active-mood {
+  background-color: #d1bfa3;
+  color: white;
+}
+
+#moodNote {
+  width: 100%;
+  height: 100px;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.mood-entry {
+  text-align: left;
+  background-color: #fdf6f0;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* ===== About Page ===== */
+.about-section {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  line-height: 1.7;
+}
+
+.about-section h3 {
+  margin-top: 1.5rem;
+  color: #7a4e2d;
+}
+
+.about-section ul {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.about-section li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff3e6;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b4226;
+  border-top: 1px solid #e0c8a0;
+}
+
+/* ===== Responsive Media Queries ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .planner-section,
+  .journal-section,
+  .mood-section,
+  .about-section {
+    padding: 1rem;
+  }
+}

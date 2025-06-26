@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mood Tracker | Time Planner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>😊 Mood Tracker</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>How Are You Feeling Today?</h2>
+      <p>Select your mood and optionally share why.</p>
+    </section>
+
+    <section class="mood-section">
+      <div class="mood-options">
+        <button onclick="selectMood('😄')">😄</button>
+        <button onclick="selectMood('😊')">😊</button>
+        <button onclick="selectMood('😐')">😐</button>
+        <button onclick="selectMood('😢')">😢</button>
+        <button onclick="selectMood('😡')">😡</button>
+      </div>
+
+      <textarea id="moodNote" placeholder="Why do you feel this way? (optional)"></textarea>
+      <button class="btn" onclick="saveMood()">Save Mood</button>
+
+      <h3>📅 Mood History</h3>
+      <div id="moodHistory"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Time Planner by Elvis</p>
+  </footer>
+
+  <script src="scripts/scripts/app.js"></script>
+</body>
+</html>

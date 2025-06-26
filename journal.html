@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Journal | Time Planner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>📓 Journal</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="mood.html">Mood Tracker</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Write Your Thoughts</h2>
+      <p>Let it all out. This space is for your mind and soul.</p>
+    </section>
+
+    <section class="journal-section">
+      <textarea id="journalInput" placeholder="Start writing here..."></textarea>
+      <button class="btn" onclick="saveEntry()">Save Entry</button>
+
+      <h3>🗒️ Your Entries</h3>
+      <div id="entries"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Time Planner by Elvis</p>
+  </footer>
+
+  <script src="scripts/scripts/app.js"></script>
+</body>
+</html>
